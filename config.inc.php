@@ -35,7 +35,7 @@ Typecho_Common::init();
 
 /** 定义数据库参数 */
 /** 不用ssl的tls就为空 vercel用ssl连接mysql默认不动 */
-$db = new Typecho_Db('Pdo_Mysql', 'typecho_');
+$db = new Typecho_Db('Pdo_Sqlsite', 'typecho_');
 $db->addServer(array (
   'host' => 'mysql.sqlpub.com',
   'user' => 'bitchblog',
